@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>EliQuick Units</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Course: Diploma in Information Communication Technology</h2>
+    <p>Select a unit and resource type to view available resources:</p>
+
+    <!-- Units -->
+    <div class="unit">
+      <h3>Unit 1: Computer Application Skills</h3>
+      <select class="unit-select" onchange="displayResources(this, 'unit1')">
+        <option value="" disabled selected>Choose a resource</option>
+        <option value="tutorial-videos">Tutorial Videos [5]</option>
+        <option value="tests">Tests [4]</option>
+        <option value="pdf-notes">PDF Notes [3]</option>
+        <option value="homework">Homework [2]</option>
+        <option value="practice-questions">Practice Questions [6]</option>
+      </select>
+      <div id="unit1-resources" class="resources"></div>
+    </div>
+
+    <div class="unit">
+      <h3>Unit 2: Application Skills</h3>
+      <select class="unit-select" onchange="displayResources(this, 'unit2')">
+        <option value="" disabled selected>Choose a resource</option>
+        <option value="tutorial-videos">Tutorial Videos [4]</option>
+        <option value="tests">Tests [3]</option>
+        <option value="pdf-notes">PDF Notes [2]</option>
+        <option value="homework">Homework [1]</option>
+        <option value="practice-questions">Practice Questions [5]</option>
+      </select>
+      <div id="unit2-resources" class="resources"></div>
+    </div>
+
+    <div class="unit">
+      <h3>Unit 3: Communication Skills</h3>
+      <select class="unit-select" onchange="displayResources(this, 'unit3')">
+        <option value="" disabled selected>Choose a resource</option>
+        <option value="tutorial-videos">Tutorial Videos [6]</option>
+        <option value="tests">Tests [4]</option>
+        <option value="pdf-notes">PDF Notes [5]</option>
+        <option value="homework">Homework [3]</option>
+        <option value="practice-questions">Practice Questions [7]</option>
+      </select>
+      <div id="unit3-resources" class="resources"></div>
+    </div>
+
+    <div class="unit">
+      <h3>Unit 4: Programming Basics</h3>
+      <select class="unit-select" onchange="displayResources(this, 'unit4')">
+        <option value="" disabled selected>Choose a resource</option>
+        <option value="tutorial-videos">Tutorial Videos [3]</option>
+        <option value="tests">Tests [2]</option>
+        <option value="pdf-notes">PDF Notes [4]</option>
+        <option value="homework">Homework [3]</option>
+        <option value="practice-questions">Practice Questions [4]</option>
+      </select>
+      <div id="unit4-resources" class="resources"></div>
+    </div>
+
+    <div class="unit">
+      <h3>Unit 5: Network Essentials</h3>
+      <select class="unit-select" onchange="displayResources(this, 'unit5')">
+        <option value="" disabled selected>Choose a resource</option>
+        <option value="tutorial-videos">Tutorial Videos [5]</option>
+        <option value="tests">Tests [4]</option>
+        <option value="pdf-notes">PDF Notes [3]</option>
+        <option value="homework">Homework [2]</option>
+        <option value="practice-questions">Practice Questions [6]</option>
+      </select>
+      <div id="unit5-resources" class="resources"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
